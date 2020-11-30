@@ -1,0 +1,379 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Irabiel Romero} \\ \vspace{1pt}
+    \small 661-240-7760 $|$ \href{mailto:x@x.com}{\underline{Irabiel.Romero@student.csulb.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/irabiel}} $|$
+    \href{https://github.com/...}{\underline{github.com/irabiel}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University Long Beach }{Long Beach, CA}
+      {M.S. in Applied Mathematics	}{Aug. 2018 -- May 2021}
+        \resumeItemListStart
+            \resumeItem{Thesis: Numerical Methods for Multiscale Modeling in Bacterial Colony Growth}
+            \resumeItem{Adviser: Dr. Hui Sun }
+        \resumeItemListEnd
+    \resumeSubheading
+      {California State University Long Beach }{Long Beach, CA}
+      {B.S. in Applied Mathematics 	}{Aug. 2016 -- May 2018}
+      \resumeSubheading
+      {California State University Long Beach}{Long Beach, CA}
+      {B.A. in Physics 	}{Aug. 2016 -- May 2018}
+      \resumeSubheading
+      {Bakersfield College 	}{Bakersfield, CA}
+      {A.S in Mathematics}{Sept. 2013 -- May 2016}
+  \resumeSubHeadingListEnd
+
+%-----------MANUSCRIPT-----------
+\section{Manuscript}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Under preparation}{}
+      {University of California San Diego}{San Diego}
+      \resumeItemListStart
+        \resumeItem{Title:}
+            \resumeItemListStart
+                \resumeItem{A multigrid method on stiff reaction-diffusion systems for bacterial colony development.}
+            \resumeItemListEnd
+        \resumeItem{Authorship:}
+            \resumeItemListStart
+                \resumeItem{Hui Sun, Irabiel Romero, and Bo Li}
+            \resumeItemListEnd
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Teaching Assistant}{Aug. 2020 -- Present}
+      {California State University Long Beach}{ Long Beach}
+      \resumeItemListStart
+        \resumeItem{Teach four sections of Precalculus}
+        \resumeItem{Hold office hours for students and Grade exams}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Research Assistant}{June 2018 -- Present}
+      {California State University Long Beach}{ Long Beach}
+      \resumeItemListStart
+        \resumeItem{Aug. 2020 -- Present}
+       \resumeItemListStart
+        \resumeItem{Help implement n-dimensional Newton-Multigrid for a 2D system of one nonlinear of PDE and system of two coupled nonlinear of PDEs}
+        \resumeItem{Integrated Newton-Multigrid to already existing kinetic Monte Carlo model}
+        \resumeItemListEnd
+        \resumeItem{June 2019 -- Aug. 2019}
+       \resumeItemListStart
+        \resumeItem{Help implement n-dimensional Modified Newton for a 1D system of three nonlinear PDEs}
+        \resumeItem{Integrated n-dimensional Modified Newton method and Multigrid method}
+        \resumeItemListEnd
+        \resumeItem{June 2018 -- Aug. 2018}
+       \resumeItemListStart
+        \resumeItem{Modified the Bacterial Colony Mathematical Model, containing only Carbon, to include Oxygen and Acetate}
+        \resumeItem{Create a 1D model to simulate nutrient profile down the center of the colony}
+        \resumeItemListEnd
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Graduate Assistant}{Aug. 2018 -- Present}
+      {California State University Long Beach}{ Long Beach}
+      \resumeItemListStart
+        \resumeItem{Grade quizzes, re-quizzes, exams, and re-exams}
+        \resumeItem{Hold office hours for students}
+        \resumeItem{Monitor computer lab and provide basic technical assistance to students}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Lindgren Math Tutorial Center Tutor}{Sept. 2017 -- May 2020}
+      {California State University Long Beach}{ Long Beach}
+      \resumeItemListStart
+        \resumeItem{Helped students increase their confidence in a particular subject matter as well as in their academic skills}
+        \resumeItem{Specialized in calculus-based courses (i.e., Ordinary Differential Equations I/II, Partial Differential Equations, Numerical Analysis, etc.)}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Bickerstaff Academic Center for Athletes}{Feb. 2017 – Aug. 2018 }
+      {California State University Long Beach}{ Long Beach}
+      \resumeItemListStart
+        \resumeItem{Specialized mathematics content tutoring on a one to one basis}
+        \resumeItem{Helped students refine learning skills such as note-taking, test preparation, and problem-solving}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Research Projects-----------
+\section{Research Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Modeling Pedestrian Movements using Stochastic Differential Equations }{}
+      {under Dr. Chung-min Lee}{}
+      \resumeItemListStart
+        \resumeItem{Modeling individual pedestrian movements on the first floor of the CSULB Liberal Arts 5 building}
+        \resumeItem{Approximated system of Stochastic Differential Equations using the Euler-Maruyama method}
+        \resumeItem{In charge of overseeing the project and lead programmer}
+        \resumeItem{Implemented algorithms using MATLAB}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Find Shortest Path of a graph modeling the city of Oldenburg Germany }{}
+      {under Dr. Lee}{}
+      \resumeItemListStart
+        \resumeItem{Dataset Road Network data from the University of Utah}
+        \resumeItem{Use contraction to simplify the graph}
+        \resumeItem{Find the shortest path of the simplified graph}
+        \resumeItem{Then find the shortest path of the subgraphs in the shortest path of the simplified graph}
+        \resumeItem{Implemented algorithms using MATLAB}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Pedestrian Crowd Density Simulations using Finite Element Method }{}
+      {under Dr. Lee}{}
+      \resumeItemListStart
+        \resumeItem{Approximating first-order nonlinear nonlocal conservation law for non-Newtonian fluid}
+        \resumeItem{Approximating two systems of Eikonal equation for desired crowd velocity and obstacle avoidance}
+        \resumeItem{Analyzing pedestrian crowd density within a closed environment}
+        \resumeItem{Implemented algorithms using MATLAB}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Approximating solutions for Reaction-Diffusion Partial Differential Equations }{}
+      {under Dr. Hui Sun}{}
+      \resumeItemListStart
+        \resumeItem{Applications in Biology regarding the colony growth of E Coli}
+        \resumeItem{Analyzing the Reaction-Diffusion model}
+        \resumeItem{Implemented algorithms using MATLAB}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {1-Dimensional simulation of the nutrient profile of bacterial colony}{}
+      {under Dr. Sun}{}
+      \resumeItemListStart
+        \resumeItem{Model the nutrient profile of the center of a bacterial colony}
+        \resumeItem{Implemented algorithms using MATLAB}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Create a linear solver to solve nonlinear PDEs }{}
+      {under Dr. Sun}{}
+      \resumeItemListStart
+        \resumeItem{Integrated n-dimensional Modified Newtons method and Multigrid method to solve a system on nonlinear PDEs}
+        \resumeItem{Implemented algorithms using MATLAB}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Integrating discrete 2D lattice kinetic Monte Carlo model and continuous Newton-Multigrid method }{}
+      {under Dr. Sun}{}
+      \resumeItemListStart
+        \resumeItem{Create 2D Newton-Multigrid for a coupled system of PDEs for the nutrient profile}
+        \resumeItem{In charge of overseeing the project and lead programmer}
+        \resumeItem{Implemented algorithms using C++}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------FELLOWSHIPS, HONORS, AND AWARDS-----------
+\section{Fellowships, Honors, and Awards}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Dean's List}}{Fall 2017}
+      \resumeProjectHeading
+          {\textbf{President’s List}}{Spring 2018}
+     \resumeProjectHeading
+          {\textbf{Samuel Councilman Scholarship}}{Fall 2019}
+      \resumeProjectHeading
+          {\textbf{Richard Green Grad Fellowship}}{Fall 2020}
+    \resumeSubHeadingListEnd
+
+%-----------ORAL PRESENTATIONS-----------
+\section{Oral Presentations}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{31st Annual CSULB Student Research Competition }}{Spring 2019}
+          \resumeItemListStart
+            \resumeItem{Spatiotemporal Establishment of Growing Bacterial Colonies}
+      \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{32nd Annual CSULB Student Research Competition }}{Spring 2020}
+          \resumeItemListStart
+            \resumeItem{Numerical Methods for Multiscale Modeling in Bacterial Colony Growth}
+      \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SIAM Conference on the Life Sciences}}{Summer 2020}
+          \resumeItemListStart
+            \resumeItem{Development of Newton-Multigrid for Multiscale Modeling in Bacterial Colony Growth}
+            \resumeItem{Canceled due to Covid-19}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Poster PRESENTATIONS-----------
+\section{Poster Presentations}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Graduate Research Conference}}{Fall 2018}
+          \resumeItemListStart
+            \resumeItem{Spatiotemporal Establishment of Growing Bacterial Colonies}
+      \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Graduate Research Conference }}{Fall 2019}
+          \resumeItemListStart
+            \resumeItem{Numerical Methods for Multiscale Modeling in Bacterial Colony Growth}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------COMPUTER AND COMPUTATIONAL SKILLS-----------
+\section{Computer and Computational Skills}
+    \resumeSubHeadingListStart
+      \resumeItemListStart
+      \resumeItem{Create approximations for integrals using various methods}
+      \resumeItem{Create approximations for solving PDEs and ODEs using Finite Difference and Finite Elements Method}
+      \resumeItem{Create approximations for solving SDEs using Euler-Maruyama method}
+      \resumeItem{Solve Matrix systems with various methods}
+      \resumeItem{Optimization algorithms from Gradient Descent, Newton's method, and Particle Swarm Optimization}
+      \resumeItem{Machine learning Algorithms using TensorFlow, and PyTorch in Python}
+      \resumeItem{Comfortable with Linux, Macs, and Windows operating systems}
+      \resumeItem{Comfortable with GitHub}
+      \resumeItem{Comfortable using terminal}
+      \resumeItem{Proficient in MATLAB}
+      \resumeItem{Proficient in Python}
+      \resumeItem{Proficient in C++}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------OTHER SKILLS-----------
+\section{Other Skills}
+    \resumeSubHeadingListStart
+      \resumeItemListStart
+        \resumeItem{Spanish}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------REFERENCES -----------
+\section{References}
+    \resumeSubHeadingListStart
+      \resumeItemListStart
+      \resumeItem{Dr. Hui Sun, Ph.D.: Paul.Sun@csulb.edu}
+      \resumeItem{Dr. Chung-min Lee, Ph.D.: Chung-min.Lee@csulb.edu}
+      \resumeItem{Dr. Bruce Chaderjain, Ph.D.: Bruce.Chaderjian@csulb.edu }
+      \resumeItem{Dr. Eun Heui Kim, Ph.D.: Eunheui.Kim@csulb.edu}
+      \resumeItem{Dr. Tangan Gao, Ph.D.: Tangan.Gao@csulb.edu }
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
